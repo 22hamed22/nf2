@@ -1,0 +1,39 @@
+/* Lightweight styles for the docs index page */
+:root{
+  --bg: #ffffff;
+  --text: #111827;
+  --muted: #6b7280;
+  --accent: #2563eb;
+  --card: #f8fafc;
+  --code-bg: #f6f8fa;
+}
+
+*{box-sizing:border-box}
+html,body{
+  margin:0;
+  padding:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  -webkit-font-smoothing:antialiased;
+}
+main{
+  max-width:960px;
+  margin:28px auto;
+  padding:20px;
+}
+h1{margin:0 0 8px;font-size:28px}
+h2{margin-top:20px;font-size:18px}
+ul{margin-top:8px}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+code{background:var(--code-bg);padding:2px 6px;border-radius:4px;font-family:monospace;font-size:0.95em}
+pre{background:var(--code-bg);padding:12px;border-radius:6px;overflow:auto}
+nav.doc-links{margin:14px 0;padding:12px;background:var(--card);border-radius:6px}
+.quick-links{display:flex;gap:12px;flex-wrap:wrap}
+.quick-links a{display:inline-block;padding:8px 12px;background:transparent;border:1px solid rgba(0,0,0,0.06);border-radius:6px}
+.footer{margin-top:30px;padding-top:12px;border-top:1px solid #eef2f7;color:var(--muted);font-size:13px}
+@media (max-width:640px){
+  main{margin:12px;padding:12px}
+  h1{font-size:22px}
+}

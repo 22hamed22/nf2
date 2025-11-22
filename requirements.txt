@@ -1,0 +1,12 @@
+# Minimal recommended dependencies (adjust versions as needed)
+torch>=1.12.0
+torchvision>=0.13.0
+numpy
+matplotlib
+imageio
+opencv-python
+nbformat
+notebook
+jupyter
+# torchsearchsorted is installed from git in the notebook; you can also add:
+git+https://github.com/aliutkus/torchsearchsorted
